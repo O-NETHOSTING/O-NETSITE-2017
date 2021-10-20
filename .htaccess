@@ -1,0 +1,69 @@
+RewriteEngine on
+
+
+RewriteRule ^home$									"index.php?page=home"
+RewriteRule ^ts3$									"index.php?page=buyts3"
+RewriteRule ^web$									"index.php?page=buyweb"
+RewriteRule ^cs16$									"index.php?page=buycs16"
+RewriteRule ^csgo$									"index.php?page=buycsgo"
+RewriteRule ^vps$									"index.php?page=buyvps"
+RewriteRule ^ded$									"index.php?page=buyded"
+RewriteRule ^gtasa$									"index.php?page=buygtasa"
+RewriteRule ^gtasabuy$									"index.php?page=gtasabuy"
+RewriteRule ^cs16buy$									"index.php?page=cs16buy"
+RewriteRule ^csgobuy$									"index.php?page=csgobuy"
+RewriteRule ^vpsbuy$									"index.php?page=vpsbuy"
+RewriteRule ^dedbuy$									"index.php?page=dedbuy"
+RewriteRule ^webbuy$									"index.php?page=webbuy"
+RewriteRule ^ts3buy$									"index.php?page=ts3buy"
+RewriteRule ^contact$									"index.php?page=contact"
+RewriteRule ^cancel$									"index.php?page=cancel"
+RewriteRule ^success$									"index.php?page=success"
+RewriteRule ^bday$									"index.php?page=bday"
+RewriteRule ^extraprize$									"index.php?page=extraprize"
+
+
+
+RewriteRule ^singup$									"index.php?page=singup"
+RewriteRule ^login$									"index.php?page=login"
+RewriteRule ^logout$									"index.php?page=logout"
+RewriteRule ^wrong$									"index.php?page=wrong"
+RewriteRule ^addons$									"index.php?page=wowaddons"
+
+RewriteRule ^login$						"index.php?page=login"
+RewriteRule ^registracija$				"index.php?page=registracija"
+RewriteRule ^welcome$					"index.php?page=welcome"
+RewriteRule ^profil$					"index.php?page=profil"
+RewriteRule ^profil-edit$					"index.php?page=profil-edit"
+RewriteRule ^profil/(.*)$				"index.php?page=profil&stranica=$1"
+RewriteRule ^tiketi$					"index.php?page=tiketi"
+RewriteRule ^support$					"index.php?page=support"
+RewriteRule ^service$					"index.php?page=service"
+RewriteRule ^support/(.*)$				"index.php?page=support&stranica=$1"
+RewriteRule ^arhiva$					"index.php?page=arhiva"
+RewriteRule ^arhiva/(.*)$				"index.php?page=arhiva&stranica=$1"
+RewriteRule ^otvori_tiket$				"index.php?page=otvori_tiket"
+RewriteRule ^tiket/(.*)$				"index.php?page=tiket&id=$1"
+
+
+RewriteRule ^admin_tiketi$						"index.php?page=admin_tiketi"
+RewriteRule ^admin_support$						"index.php?page=admin_support"
+RewriteRule ^admin_support/(.*)$				"index.php?page=admin_support&stranica=$1"
+RewriteRule ^admin_tiket/(.*)$					"index.php?page=admin_tiket&id=$1"
+RewriteRule ^admin_arhiva$						"index.php?page=admin_arhiva"
+RewriteRule ^admin_arhiva/(.*)$					"index.php?page=admin_arhiva&stranica=$1"
+
+
+#ostalo
+RewriteRule ^imgages/$                                  	 "https://i.vimeocdn.com/video/164258083_640.jpg"
+RewriteRule ^img/$                                  	 "https://i.vimeocdn.com/video/164258083_640.jpg"
+RewriteRule ^css/$                                  	 "https://i.vimeocdn.com/video/164258083_640.jpg"
+RewriteRule ^js/$                                   	 "https://i.vimeocdn.com/video/164258083_640.jpg"
+RewriteRule ^inc/$                                  	 "https://i.vimeocdn.com/video/164258083_640.jpg"
+RewriteRule ^fonts/$                                  	 "https://i.vimeocdn.com/video/164258083_640.jpg"
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+deny from 5.149.69.140
